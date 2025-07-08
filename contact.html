@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<!-- Translations -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
+
+<!-- RTL CSS -->
+<style>
+  [dir="rtl"] .navbar-nav, 
+  [dir="rtl"] .left-info {
+    float: right !important;
+    text-align: right;
+  }
+  [dir="rtl"] .right-icons {
+    float: left !important;
+  }
+  /* Ensure Owl Carousel displays correctly in RTL */
+
+[dir="rtl"] .owl-carousel .owl-item {
+  float: right;
+}
+
+[dir="rtl"] .owl-partners {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Force LTR direction for the slider even inside RTL layout */
+[dir="rtl"] .owl-partners {
+  direction: ltr !important;
+}
+
+
+</style>
+
+
+<!-- RTL CSS (for Arabic) -->
+<style>
+  [dir="rtl"] .left-info { float: right !important; }
+  [dir="rtl"] .right-icons { float: left !important; }
+</style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>JOB HUNT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li ><a href="#"><i class="fa fa-clock-o"></i> <span data-i18n="work_times" >Mon-Fri 09:00-17:00</span></a></li>
+              <li  ><a href="#"><i class="fa fa-phone"></i><span data-i18n="phone_number"> + 254 703-952-223</span></a></li>
+              <li  ><a href="#"><i class="fa fa-map-marker "></i><span data-i18n="base_country">Republic of Kenya</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2 data-i18n="header_title">Job Hunt</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><span data-i18n="home_nav" > Home </span>
+                  
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><span data-i18n="about_us_nav">About Us</span></a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"><span data-i18n="services_nav">Our Services</span></a>
+              </li>                          
+              <li class="nav-item active ">
+                <a class="nav-link" href="contact.html"><span data-i18n="contact_us_nav" >Contact Us</span>
+                <span class="sr-only">(current)</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
+              </li> -->
+              <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item language-option active" href="#" data-lang="en">English</a>
+      <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
+      <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+    </div>
+  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+   <div class="page-heading header-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 data-i18n="contact_us_title">Contact Us</h1>
+        <span data-i18n="message_contact_us">feel free to send us a message now!</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-information">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="contact-item">
+          <i class="fa fa-phone"></i>
+          <h4 data-i18n="phone_title">Phone</h4>
+          <p data-i18n="phone_service">Our service is available 24/7</p>
+          <a href="#" data-i18n="phone_number">+254 703-952-223</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-item">
+          <i class="fa fa-envelope"></i>
+          <h4 data-i18n="email_title">Email</h4>
+          <p data-i18n="email_message">Feel free to reach us</p>
+          <a href="#" data-i18n="email_address">info@jobs-hunt.com</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-item">
+          <i class="fa fa-map-marker"></i>
+          <h4 data-i18n="location_title">Location</h4>
+          <p data-i18n="location_address">Nairobi, hurlingham <br> Kenya</p>
+          <a href="#map" data-i18n="view_map">View on Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="callback-form contact-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2 data-i18n="send_message_title">Send us a <em data-i18n="send_message_em">message</em></h2>
+          <span data-i18n="callback_request">You want one of our managers to reach you?</span>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="contact-form">
+          <form id="contact" action="https://formspree.io/f/mdkzrnng" method="POST">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <fieldset>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="" data-i18n-placeholder="full_name_placeholder">
+                </fieldset>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <fieldset>
+                  <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="" data-i18n-placeholder="email_placeholder">
+                </fieldset>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <fieldset>
+                  <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="" data-i18n-placeholder="subject_placeholder">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required="" data-i18n-placeholder="message_placeholder"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="filled-button" data-i18n="send_button">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <div id="map">
+<!-- How to change your own map point
+Thinkin about the exact url in google maps
+	1. Go to Google Maps
+	2. Click on your location point
+	3. Click "Share" and choose "Embed map" tab
+	4. Copy only URL and paste it within the src="" field below
+-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15955.19971560985!2d36.78188311864649!3d-1.2945763790024896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shurlingham%20%2C%20koseheight%20%2C%20Nairobi%20City!5e0!3m2!1sen!2stn!4v1750431468727!5m2!1sen!2stn" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="header_title">JOB HUNT</h4>
+            <p data-i18n="thank_you_footer" > THANK YOU, AND
+WE LOOK
+FORWARD TO
+WORKING WITH YOU. </p>
+           <!--  <ul class="social-icons">
+              <li><a rel="nofollow" href="https://fb.com/google" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              
+            </ul>
+            -->
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="infos_footer">INFOS</h4>
+            <ul class="menu-list">
+              <li><a href="#" data-i18n="thank_you_footer1"  >info@jobs -hunt. com</a></li>
+              <li><a href="#" data-i18n="thank_you_footer2"  >00254 703 952223</a></li>
+              <li><a href="#" data-i18n="thank_you_footer3"  >Nairobi, hurlingham, Kenya</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="Additional_Pages"  >Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="about.html" data-i18n="about_us_nav"  >About Us</a></li>
+              <li><a href="services.html" data-i18n="services_nav"  >Our Services</a></li>
+              <li><a href="contact.html" data-i18n="contact_us_nav" >Contact Us</a></li>
+              <li><a href="#top" data-i18n="up_footer" >UP</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item">
+            <h4 data-i18n="contact_us_nav" >Contact Us</h4>
+            <div class="contact-form">
+              <form id="contact footer-contact" action="https://formspree.io/f/mdkzrnng" method="POST">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button" data-i18n="send_message_footer">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2025 JOB HUNT Co.,Ltd.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>

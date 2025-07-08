@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<!-- Translations -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flexslider/jquery.flexslider-min.js"></script>
+
+<!-- RTL CSS -->
+<style>
+  [dir="rtl"] .navbar-nav, 
+  [dir="rtl"] .left-info {
+    float: right !important;
+    text-align: right;
+  }
+  [dir="rtl"] .right-icons {
+    float: left !important;
+  }
+  /* Ensure Owl Carousel displays correctly in RTL */
+
+[dir="rtl"] .owl-carousel .owl-item {
+  float: right;
+}
+
+[dir="rtl"] .owl-partners {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Force LTR direction for the slider even inside RTL layout */
+[dir="rtl"] .owl-partners {
+  direction: ltr !important;
+}
+
+
+</style>
+
+
+<!-- RTL CSS (for Arabic) -->
+<style>
+  [dir="rtl"] .left-info { float: right !important; }
+  [dir="rtl"] .right-icons { float: left !important; }
+</style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>JOB HUNT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+     <link rel="shortcut icon" href="assets/images/favicon1.jpg">
+  </head>
+
+ 
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li ><a href="#"><i class="fa fa-clock-o"></i> <span data-i18n="work_times" >Mon-Fri 09:00-17:00</span></a></li>
+              <li  ><a href="#"><i class="fa fa-phone"></i><span data-i18n="phone_number"> + 254 703-952-223</span></a></li>
+              <li  ><a href="#"><i class="fa fa-map-marker "></i><span data-i18n="base_country">Republic of Kenya</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2 data-i18n="header_title">Job Hunt</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#top"><span data-i18n="home_nav" > Home </span>
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><span data-i18n="about_us_nav">About Us</span></a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"><span data-i18n="services_nav">Our Services</span></a>
+              </li>                          
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><span data-i18n="contact_us_nav" >Contact Us</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
+              </li> -->
+              <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item language-option active" href="#" data-lang="en">English</a>
+      <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
+      <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+    </div>
+  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-3">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6 data-i18n="slider_3_1" >we are here to keep your house clean</h6>
+                  <h4 data-i18n="slider_3_2" >HOUSEMAID<br>&amp; Cleaners</h4>
+                  <p data-i18n="slider_3_3" >Our Cleaners maintain all facilities</p>
+                  <br>
+                  <a href="services.html#tabs-2" class="filled-button"> <span data-i18n="slider_3_4" > our services </span></a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+           <!-- Item -->
+          <div class="item item-4">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6 data-i18n="slider_4_1">we are ready to take care of you</h6>
+                  <h4 data-i18n="slider_4_2" >NURSES</h4>
+                  <p data-i18n="slider_4_3">Working in the healthcare industry can be a challenging, but extremely rewarding career.</p>
+                  <br>
+                  <a href="services.html#tabs-3" class="filled-button"><span data-i18n="slider_4_4"> our services </span> </a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6 data-i18n="welcome">we are ready to help you</h6>
+                   <h4 data-i18n="guard_services">GUARD SERVICES</h4>
+                 <p data-i18n="right_people" >RIGHT PEOPLE IN THE RIGHT PLACE  </p> 
+                 <br>
+  <a href="services.html#tabs-1" class="filled-button" ><span data-i18n="our_services">our services</span> </a>
+</div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6 data-i18n="slider_2_1">we are here to support you</h6>
+                  <h4 data-i18n="slider_2_2" >SECURITY CONTROL<br>&amp; ROOM OPERATOR</h4>
+                  <p data-i18n="slider_2_3" >There may be several duties and responsibilities of security control room operator</p>
+                  <br>
+                  <a href="services.html#tabs-1" class="filled-button"> <span data-i18n="slider_2_4"> our services </span></a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          
+           <!-- Item -->
+          <div class="item item-5">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6 data-i18n="slider_5_1" >we provide skilled drivers</h6>
+                  <h4 data-i18n="slider_5_2" >DRIVERS</h4>
+                  <p data-i18n="slider_5_3" >There are at least two different sets of driving skills that make someone a good driver: technical skills and safety skills.</p> 
+                  <br>
+                  <a href="services.html#tabs-4" class="filled-button" data-i18n="slider_4_4" ><span>our services </span> </a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+           
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4 data-i18n="requestacallbackrightnow" >Request a call back right now ?</h4>
+            <span data-i18n="Weofferthebestjobopportunitiesandweare" >We offer the best job opportunities and we are always available for your questions</span>
+          </div>
+          <div class="col-md-4">
+            <a href="contact.html" class="border-button"  data-i18n="contact_us_button_body"> Contact Us  </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2 data-i18n="manpowerservices"  > Manpower &amp; Consultancy <em>Services</em></h2>
+              <span data-i18n="your_success partner" >your success partner</span>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/nursehijab.jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="nurse_service" >Nurses</h4>
+                <p data-i18n="nurse_service_1" >We supply qualified nurses who are dedicated, compassionate, and globally prepared to work in hospitals, elderly care homes, private homes, and health institutions.</p>
+                <a href="services.html#tabs-3" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/Housemaid.jpeg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="housekeeping_service" >Housekeeping</h4>
+                <p data-i18n="housekeeping_service_1" >Our qualified team offers complete cleaning services for homes and offices at competitive prices.</p>
+                <a href="services.html#tabs-2" class="filled-button"> <span data-i18n="housekeeping_service_2" > Read More </span> </a>
+              </div>
+            </div>
+          </div>
+                     <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/driver1.jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="transportation_service" >Transportation</h4>
+                <p data-i18n="transportation_service_1"  >Professional drivers with modern vehicles to ensure safe and comfortable travel for all your needs.</p>
+                <a href="services.html#tabs-4" class="filled-button"> <span data-i18n="transportation_service_3"  > Read More </span> </a>
+              </div>
+            </div>
+          </div>
+<!-- no translation no modifications -->
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/barista.jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="Waiters_services_title" >Waiters &amp; Waitresses</h4>
+                <p data-i18n="Waiters_services" >We provides highly trained and customer-oriented waitresses ready to serve in hotels, restaurants, resorts, and catering events worldwide.</p>
+                <a href="services.html#waiter-image-nav" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/barista2.jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="barista_service" >Barista</h4>
+                <p data-i18n="barista_service_1" >Our baristas are passionate about coffee and customer service. Carefully selected by JOB HUNT, they are trained to create a memorable experience in cafes, hotels, and specialty coffee shops.</p>
+                <a href="services.html#tabs-5" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+          
+          
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/nailtechnicien1.jfif" alt="">
+              <div class="down-content">
+                <h4 data-i18n="nail_service" >NAIL TECHNICIANS</h4>
+                <p data-i18n="nail_service_1" >JOB HUNT supplies nail technicians who are creative, detail-oriented, and certified in beauty and wellness care. Our technicians are equipped to work in salons, spas, and personal care services abroad.</p>
+                <a href="services.html#tabs-6" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/stylist-woman-taking-care-her-client-afro-hair (1).jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="hair_service" >HAIR SALON WORKER</h4>
+                <p data-i18n="hair_service_1" >Our hair salon workers include hairstylists, assistants, and beauty care professionals capable of working in salons, hotels, and wellness centers. </p>
+                <a href="services.html#hair-salon-image-nav" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/massage12.jfif" alt="">
+              <div class="down-content">
+                <h4 data-i18n="massage_service" >MASSAGE WORKER</h4>
+                <p data-i18n="massage_service_1" >we deliver massage therapists with formal training and a gentle, professional approach. They are ready to work in spas, wellness clinics, resorts, and healthcare settings abroad.</p>
+                <a href="services.html#massage-image-nav" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/securityserv.jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="security_service" >Security</h4>
+                <p data-i18n="security_service_1" >We provide comprehensive security services to protect your assets and personnel to the highest standards.</p>
+                <a href="services.html#tabs-1" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+          <!-- end nno translatons new services added sprint 2 -->
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-content">
+              
+              <span data-i18n="time_quality" >TIME & QUALITY</span>
+              <h2  data-i18n="contract_terms" >CONTRACT <em> &amp; </em> TERMS</h2>
+              <span data-i18n="legal_agreement" > <em> LEGAL AGREEMENT </em> </span> 
+              <p data-i18n="legal_agreement_1" >Our agreement must be approved singed from both sides with job order letter</p>
+              <span data-i18n="best_teamwork"> <em> BEST TEAMWORK </em> </span> 
+              <p data-i18n="best_teamwork_1" >It’s all about people! A company is only as good as the people it employs. We hire the best to provie the best services</p>
+              <a href="contact.html" class="filled-button" data-i18n="contact_us_button_body" > Contact us </a>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit"> 84 </div>
+                  <div class="count-title" data-i18n="work_hours_body"  >Work Hours</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">3700</div>
+                  <div class="count-title" data-i18n="great_reviews_body" >Great Reviews</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">2152</div>
+                  <div class="count-title" data-i18n="project_done_done">Projects Done</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">7</div>
+                  <div class="count-title" data-i18n="awards_won_body" >Awards Won</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="left-image">
+                    <img src="assets/images/logoJH.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <span data-i18n="who_we_are" >Who we are</span>
+                    <h2 data-i18n="who_we_are_1" >Get to know about <em>our company</em></h2>
+                    <p data-i18n="who_we_are_2" > JOB HUNT RESOURCING Ltd is a fully registered and licensed recruitment company based in Nairobi, Kenya that offers International and Local job placements in all job sectors.
+ </p>
+                    <a href="about.html" class="filled-button" data-i18n="contract_terms_button" > Read More </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+       <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2 data-i18n="news_achievments" >News &amp; <em> Achievements </em></h2>
+              <span data-i18n="news_achievments_1" > We already power many companies and clients </span>
+            </div>
+          </div>
+          <!--
+          <div class="col-md-12">
+            <div class="owl-testimonials owl-carousel">
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                
+                  <h4>George Walker</h4>
+                  <span>Chief Financial Analyst</span>
+                  <p> "Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>John Smith</h4>
+                  <span>Market Specialist</span>
+                  <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>David Wood</h4>
+                  <span>Chief Accountant</span>
+                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Andrew Boom</h4>
+                  <span>Marketing Head</span>
+                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div> -->  
+    
+     <div class="gallery-wrapper">
+  <div class="gallery-track" id="gallery-track">
+    <!-- Repeat image set twice for smooth loop -->
+   <img src="assets/images/driver1.jpg" alt="Image 1">
+    <img src="assets/images/sec2.jpg" alt="Image 2">
+    <img src="assets/images/sec1.jpg" alt="Image 3">
+    <img src="assets/images/securityserv.jpg" alt="Image 4">
+
+    <!-- Repeat to ensure infinite loop effect -->
+    <img src="assets/images/driver1.jpg" alt="Image 1 clone">
+    <img src="assets/images/sec2.jpg" alt="Image 2 clone">
+    <img src="assets/images/sec1.jpg" alt="Image 3 clone">
+    <img src="assets/images/securityserv.jpg" alt="Image 4">
+
+  </div>
+</div>
+    </div>
+</div>
+</div>
+   
+
+    <div class="callback-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2 data-i18n="request_call_back_form" >Request a <em>call back</em></h2>
+              <span data-i18n="request_call_back_form_1">Need any help or you need to say something ?</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form id="contact" action="https://formspree.io/f/mdkzrnng" method="POST">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="border-button" data-i18n="send_message_footer" >Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+            
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Saudi_Arabia.svg.png" title="Saudi Arabia" alt="1">
+                <p><em> Saudi Arabia </em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Qatar.svg.png" title="Qatar" alt="2">
+                <p><em> Qatar</em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/Flag_of_Dubai.svg.png" title="Dubai" alt="3">
+                <p><em> Dubai </em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Kuwait.svg (1).png" title="Kuwait" alt="4">
+                <p><em> Kuwait </em></p>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="header_title">JOB HUNT</h4>
+            <p data-i18n="thank_you_footer" > THANK YOU, AND
+WE LOOK
+FORWARD TO
+WORKING WITH YOU. </p>
+           <!--  <ul class="social-icons">
+              <li><a rel="nofollow" href="https://fb.com/google" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              
+            </ul>
+            -->
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="infos_footer">INFOS</h4>
+            <ul class="menu-list">
+              <li><a href="#" data-i18n="thank_you_footer1" >info@jobs -hunt. com</a></li>
+              <li><a href="#" data-i18n="thank_you_footer2" ></a></li>
+              <li><a href="#" data-i18n="thank_you_footer3" >Nairobi, hurlingham, Kenya</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="Additional_Pages"  >Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="about.html" data-i18n="about_us_nav"  >About Us</a></li>
+              <li><a href="services.html" data-i18n="services_nav"  >Our Services</a></li>
+              <li><a href="contact.html" data-i18n="contact_us_nav" >Contact Us</a></li>
+              <li><a href="#top" data-i18n="up_footer" >UP</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item">
+           <h4 data-i18n="contact_us_nav" >Contact Us</h4>
+            <div class="contact-form">
+              <form id="contact footer-contact" action="https://formspree.io/f/mdkzrnng" method="POST">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button" data-i18n="send_message_footer">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2025 JOB HUNT Co.,Ltd.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>

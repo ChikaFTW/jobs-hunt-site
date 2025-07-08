@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<!-- Translations -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
+
+<!-- RTL CSS -->
+<style>
+  [dir="rtl"] .navbar-nav, 
+  [dir="rtl"] .left-info {
+    float: right !important;
+    text-align: right;
+  }
+  [dir="rtl"] .right-icons {
+    float: left !important;
+  }
+  /* Ensure Owl Carousel displays correctly in RTL */
+
+[dir="rtl"] .owl-carousel .owl-item {
+  float: right;
+}
+
+[dir="rtl"] .owl-partners {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Force LTR direction for the slider even inside RTL layout */
+[dir="rtl"] .owl-partners {
+  direction: ltr !important;
+}
+
+
+</style>
+
+
+<!-- RTL CSS (for Arabic) -->
+<style>
+  [dir="rtl"] .left-info { float: right !important; }
+  [dir="rtl"] .right-icons { float: left !important; }
+</style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>JOB HUNT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li ><a href="#"><i class="fa fa-clock-o"></i> <span data-i18n="work_times" >Mon-Fri 09:00-17:00</span></a></li>
+              <li  ><a href="#"><i class="fa fa-phone"></i><span data-i18n="phone_number"> + 254 703-952-223</span></a></li>
+              <li  ><a href="#"><i class="fa fa-map-marker "></i><span data-i18n="base_country">Republic of Kenya</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2 data-i18n="header_title">Job Hunt</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html"><span data-i18n="home_nav" > Home </span>
+                  
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html"><span data-i18n="about_us_nav">About Us</span>
+                <span class="sr-only">(current)</span></a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"><span data-i18n="services_nav">Our Services</span></a>
+              </li>                          
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><span data-i18n="contact_us_nav" >Contact Us</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
+              </li> -->
+              <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item language-option active" href="#" data-lang="en">English</a>
+      <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
+      <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+    </div>
+  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 data-i18n="about_us_nav">About Us</h1>
+            <span data-i18n="we_have_over_20_years" >We have over 20 years of experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-info about-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <span>JOB HUNT RESOURCING Ltd </span>
+                    <h2 data-i18n="who_we_are_1" >Get to know about <em>our company</em></h2>
+                    <p data-i18n="who_we_are_about_html"> JOB HUNT RESOURCING Ltd is a fully registered and licensed
+recruitment company based in Nairobi, Kenya that offers International
+and Local job placements in all job sectors. It was established to satisfy
+the industry’s growing needs for manpower recruitment, sourcing and
+supply. We partner with companies who want to save time, money,
+and hassles related to Recruitment and Selection.
+ </p> 
+<p data-i18n="who_we_are_about_html_1" > JOB HUNT has a reputation of providing honest, hardworking,
+disciplined and focused personnel in all fields. This we do by verifying
+their conduct and character through referrals, certificates from
+relevant authorities e.g. Kenya Police, former employers, Religious
+leaders and community. We also work closely with Kenyan Ministry of
+Foreign Affairs and Youth Affairs </p>
+                 <!--    <a href="" class="filled-button">Read More</a>  -->
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="left-image">
+                    <img src="assets/images/logoJH.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2 data-i18n="process_guidance" > Process  &amp; <em> Guidance </em></h2>
+              <span data-i18n="process_guidance_1"  >Our Strenghts are organization and execution</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/human-resources.gif" alt="">
+              <div class="down-content">
+                <h4 data-i18n="process_guidance_2"  > SOURCING &amp; MANPOWER POOLING: </h4>
+                <p data-i18n="process_guidance_3" >  JOB HUNT maintains a manpower pool of ready-to-leave workers
+called from private and public employment offices located in key regions of the country. If
+required, JOB HUNT shall make all the arrangements for the immediate
+sourcing/identification of the needed workers not identified/available in our existing pool.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/recruitment.gif" alt="">
+              <div class="down-content">
+                <h4 data-i18n="process_guidance_pre_screen_1" >PRE-SCREENING &amp; SHORTLISTING:</h4>
+                <p data-i18n="process_guidance_pre_screen_2" >Candidates for overseas employment undergo rigorous screening, including psychometric tests to evaluate personality, interests, aptitude, and intellect. In-depth interviews assess job suitability while verifying all credentials. The top 3-4 qualified candidates per position are shortlisted for employer review.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/employee.gif" alt="">
+              <div class="down-content">
+                <h4  data-i18n="process_guidance_final_1" > FINAL SELECTION: </h4>
+                <p data-i18n="process_guidance_final_2" >JOB HUNT can provide our client’s representatives with all the facilities and assistance in
+making their final selection fast and efficient. If so
+desired, JOB HUNT can do the final selection of their needed workers for and in behalf of our
+foreign employers with full guarantee on the
+workers competence and capabilities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/test.gif" alt="">
+              <div class="down-content">
+                <h4  data-i18n="process_guidance_skills_1" > SKILLS TRADE TESTING: </h4>
+                <p data-i18n="process_guidance_skills_2" >Upon the employer’s request, JOB HUNT may arrange for applicants to undergo skill testing
+designed to check and assess proficiencies required
+by our principals. These tests are administered by credible and accredited government and
+private institutions/trade test centers.</p>
+              </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/medical-assistant.gif" alt="">
+              <div class="down-content">
+                <h4  data-i18n="process_guidance_medical_1" > MEDICAL EXAMINATION: </h4>
+                <p data-i18n="process_guidance_medical_2" >All selected workers must pass country-specific medical exams conducted with Kenyan government partners (Department of Health, National Employment Authority) and accredited overseas medical facilities. Employers may request official medical reports.</p>
+              </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/management.gif" alt="">
+              <div class="down-content">
+                <h4  data-i18n="process_guidance_process_document_1" > PROCESSING & DOCUMENTATION: </h4>
+                <p data-i18n="process_process_document_2" >JOB HUNT is comprised of competent personnel to process the required documents of
+selected workers. Our documentation specialists personally
+monitor and ensure the prompt processing for passports, contracts, travel and exit passes, tax
+exemptions, visa processing and applications and
+other related clearances and paperwork.
+</p>
+              </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/plane.gif" alt="">
+              <div class="down-content">
+                <h4  data-i18n="process_guidance_pre_depart_1" > PRE-DEPARTURE ORIENTATION SEMINAR: </h4>
+                <p data-i18n="process_guidance_pre_depart_2" >JOB HUNT conducts intensive pre-departure orientations to prepare workers for the host country’s culture, traditions, and job psychological demands.
+</p>
+                   <ul class="orientation-list">
+      <li class="list-header" data-i18n="orientation_list_header">Sessions cover:</li>
+      <li data-i18n="orientation_item1">• Destination country basics</li>
+      <li data-i18n="orientation_item2">• Employer's company policies</li>
+      <li data-i18n="orientation_item3">• Employment terms & conditions</li>
+      <li data-i18n="orientation_item4">• Job expectations</li>
+    </ul>
+
+              </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="team-item">
+              <img src="assets/images/plane-ticket.gif" alt="">
+              <div class="down-content">
+                <h4  data-i18n="process_guidance_ticketing_1" > TICKETING and SEND-OFF SERVICES: </h4>
+                <p data-i18n="process_guidance_ticketing_2" >Our expert team handles all ticketing (bookings, confirmations) and provides airport assistance. Employers receive worker schedule updates via fax/email/phone before and after Nairobi departures. Required documents travel with workers for on-site formalities.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+            
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Saudi_Arabia.svg.png" title="Saudi Arabia" alt="1">
+                <p><em> Saudi Arabia </em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Qatar.svg.png" title="Qatar" alt="2">
+                <p><em> Qatar</em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/Flag_of_Dubai.svg.png" title="Dubai" alt="3">
+                <p><em> Dubai </em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Kuwait.svg (1).png" title="Kuwait" alt="4">
+                <p><em> Kuwait </em></p>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!--  
+    <div class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>What they say <em>about us</em></h2>
+              <span>testimonials from our greatest clients</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-testimonials owl-carousel">
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>George Walker</h4>
+                  <span>Chief Financial Analyst</span>
+                  <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>John Smith</h4>
+                  <span>Market Specialist</span>
+                  <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>David Wood</h4>
+                  <span>Chief Accountant</span>
+                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Andrew Boom</h4>
+                  <span>Marketing Head</span>
+                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+       <!-- Footer Starts Here -->
+    
+       <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="header_title">JOB HUNT</h4>
+            <p data-i18n="thank_you_footer" > THANK YOU, AND
+WE LOOK
+FORWARD TO
+WORKING WITH YOU. </p>
+           <!--  <ul class="social-icons">
+              <li><a rel="nofollow" href="https://fb.com/google" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              
+            </ul>
+            -->
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="infos_footer">INFOS</h4>
+            <ul class="menu-list">
+              <li><a href="#" data-i18n="thank_you_footer1"  >info@jobs -hunt. com</a></li>
+              <li><a href="#" data-i18n="thank_you_footer2"  >00254 703 952223</a></li>
+              <li><a href="#" data-i18n="thank_you_footer3"  >Nairobi, hurlingham, Kenya</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="Additional_Pages"  >Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="about.html" data-i18n="about_us_nav"  >About Us</a></li>
+              <li><a href="services.html" data-i18n="services_nav"  >Our Services</a></li>
+              <li><a href="contact.html" data-i18n="contact_us_nav" >Contact Us</a></li>
+              <li><a href="#top" data-i18n="up_footer" >UP</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item">
+            <h4 data-i18n="contact_us_nav" >Contact Us</h4>
+            <div class="contact-form">
+              <form id="contact footer-contact" action="https://formspree.io/f/mdkzrnng" method="POST">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button" data-i18n="send_message_footer">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2025 JOB HUNT Co.,Ltd.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>

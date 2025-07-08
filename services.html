@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<!-- Translations -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
+
+<!-- RTL CSS -->
+<style>
+  [dir="rtl"] .navbar-nav, 
+  [dir="rtl"] .left-info {
+    float: right !important;
+    text-align: right;
+  }
+  [dir="rtl"] .right-icons {
+    float: left !important;
+  }
+  /* Ensure Owl Carousel displays correctly in RTL */
+
+[dir="rtl"] .owl-carousel .owl-item {
+  float: right;
+}
+
+[dir="rtl"] .owl-partners {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Force LTR direction for the slider even inside RTL layout */
+[dir="rtl"] .owl-partners {
+  direction: ltr !important;
+}
+
+
+</style>
+
+
+<!-- RTL CSS (for Arabic) -->
+<style>
+  [dir="rtl"] .left-info { float: right !important; }
+  [dir="rtl"] .right-icons { float: left !important; }
+</style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>JOB HUNT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li ><a href="#"><i class="fa fa-clock-o"></i> <span data-i18n="work_times" >Mon-Fri 09:00-17:00</span></a></li>
+              <li  ><a href="#"><i class="fa fa-phone"></i><span data-i18n="phone_number"> + 254 703-952-223</span></a></li>
+              <li  ><a href="#"><i class="fa fa-map-marker "></i><span data-i18n="base_country">Republic of Kenya</span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2 data-i18n="header_title">Job Hunt</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><span data-i18n="home_nav" > Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><span data-i18n="about_us_nav">About Us</span></a>
+              </li>  
+              <li class="nav-item active">
+                <a class="nav-link" href="services.html"><span data-i18n="services_nav">Our Services</span> 
+                 <span class="sr-only">(current)</span></a>
+              </li>                          
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><span data-i18n="contact_us_nav" >Contact Us</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
+              </li> -->
+              <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item language-option active" href="#" data-lang="en">English</a>
+      <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
+      <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+    </div>
+  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Pagge Content starts here -->
+    <div class="page-heading header-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 data-i18n="services_title">Our Services</h1>
+        <span data-i18n="services_subtitle">We offer the best job opportunities</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="single-services">
+  <div class="container">
+    <div class="row" id="tabs">
+      <div class="col-md-4">
+        <ul class="tab-links" >
+          
+          <li id="tab-link-housekeeping"><a href='#tabs-2' data-i18n="housekeeping_tab">Housekeeping</a></li>
+          <li id="tab-link-healthcare"><a href='#tabs-3' data-i18n="healthcare_tab">Healthcare</a></li>
+        <li id="tab-link-transport"><a href='#tabs-4' data-i18n="transportation_tab">Transportation</a></li>
+        <li id="tab-link-restaurant"><a href='#tabs-5' data-i18n="resto_tab">Restaurant &amp; Coffee Staff</a></li>
+        <li id="tab-link-beauty"><a href='#tabs-6' data-i18n="Beauty_tab">Beauty &amp; Wellness Services</a></li>
+        <li id="tab-link-security"><a href='#tabs-1' data-i18n="security_tab">Security</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <section class='tabs-content'>
+         
+           
+          
+           <article id='tabs-1'>
+            <img src="assets/images/security_guard.jpeg" alt="">
+            <h4 data-i18n="security_title">Security</h4>
+            <p data-i18n="security_desc">We know from experience that providing the best security is about having the right people for each specific job environment. At radar, we meet the needs of every job by using our strategic staffing model. This means that we determine the specific mix of skills and attributes needed for each position, so you can feel confident knowing you are getting the best person for the job. Radar offers a variety of guard services as a way to customize a security solution that fits your unique environment and budget.</p>
+            <p data-i18n="security_desc2">We believe in providing our clients with excellent customer service along with a specialised security service. We allocate a dedicated client manager who is wholly responsible for ensuring the highest level of service delivery is provided to your site. They will conduct regular meetings with your team to ensure you are receiving the full benefit of trusting us to secure your site and how we can help you further.</p>
+          </article>
+          <article id='tabs-2'>
+            <img src="assets/images/Housemaid.jpeg" alt="">
+            <h4 data-i18n="housemaid_title">HOUSEMAID</h4>
+            <p data-i18n="housemaid_desc">JOB HUNT RESOURCING COMPANY is equip with well trained and competent recruitment officers,marketing staff and interviewers that conduct Special Recruitment Activities (SRAs), Job Fairs and Interviews in different provinces and regions of the KENYA to look for workers and/or applicants that are highly skilled, experienced, and has a good working attitude and personal character for our foreign principals and/or clients we provide housemaids with :</p>
+            <ul>
+              <li data-i18n="housemaid_li1">• Excellent/Fluent written and spoken English</li>
+              <li data-i18n="housemaid_li2">• Trained and qualified from government school</li>
+              <li data-i18n="housemaid_li3">• Skilled with thinking on their feet</li>
+              <li data-i18n="housemaid_li4">• Keep calm under pressure</li>
+              <li data-i18n="housemaid_li5">• Posses a responsible and mature nature</li>
+              <li data-i18n="housemaid_li6">• Qualified in all house cleaning tasks and follow the weekly or daily work plan</li>
+            </ul>
+
+            <h4 data-i18n="cleaners_title">CLEANERS</h4>
+            <p data-i18n="cleaners_desc">Our Cleaners maintain all facilities by keeping the company premises clean and well-organized. They also monitor materials stored in their area and respond to visitors' inquiries about where they can get certain things done:</p>
+            <ul>
+              <li data-i18n="cleaners_li1">• A Cleaner is responsible for all basic cleaning in and around the facility or office building. This can entail dusting, mopping, sweeping, vacuuming, and cleaning smudges off windows and doors. Ensuring restrooms are cleaned, sanitized, and restocked.</li>
+            </ul>
+          </article>
+
+          <article id='tabs-3'>
+            <img src="assets/images/Flux_Dev_A_warm_and_cozy_domestic_scene_depicting_a_compassion_1.jpg" alt="">
+            <h4 data-i18n="nurses_title">NURSES</h4>
+            <p data-i18n="nurses_desc">Working in the healthcare industry can be a challenging, but extremely rewarding career. for that we provide the height human skills in addition to professional skills , we provide the best Kenyan experienced nurses with :</p>
+            <ul>
+              <li data-i18n="nurses_li1">• Excellent/Fluent written and spoken English</li>
+              <li data-i18n="nurses_li2">• Urgent care and emergency care</li>
+              <li data-i18n="nurses_li3">• Checking and monitoring vital signs</li>
+              <li data-i18n="nurses_li4">• Customer service and safety as their key morals</li>
+              <li data-i18n="nurses_li5">• Patient and family education</li>
+              <li data-i18n="nurses_li6">• Keep calm under pressure</li>
+              <li data-i18n="nurses_li7">• Technology skills</li>
+              <li data-i18n="nurses_li8">• Qualified in operating computer systems</li>
+              <li data-i18n="nurses_li9">• Critical thinking and problem solving</li>
+            </ul>
+          </article>
+
+          <article id='tabs-4'>
+            <img src="assets/images/driver1.jpg" alt="">
+            <h4 data-i18n="drivers_title">Drivers</h4>
+            <p data-i18n="drivers_desc">There are at least two different sets of driving skills that make someone a good driver: technical skills and safety skills. Technical skills include steering, reflexes, smooth braking and acceleration, ability to judge distances, and other measures of the driver's ability. Our Drivers possess the following skills:</p>
+            <ul>
+              <li data-i18n="drivers_li1">• Excellent/Fluent written and spoken English</li>
+              <li data-i18n="drivers_li2">• One of the most important qualities of a good driver is that he or she should be skilled enough to handle any situation on the road</li>
+              <li data-i18n="drivers_li3">• Knowledge</li>
+              <li data-i18n="drivers_li4">• Self Discipline</li>
+              <li data-i18n="drivers_li5">• Patience</li>
+              <li data-i18n="drivers_li6">• Alertness</li>
+              <li data-i18n="drivers_li7">• Mechanical Skills</li>
+              <li data-i18n="drivers_li8">• Responsible</li>
+              <li data-i18n="drivers_li9">• Experienced</li>
+            </ul>
+          </article>
+
+          <article id='tabs-5'>
+              <img id="barsita-image-nav" src="assets/images/barista2.jpg" alt="">
+            <h4 data-i18n="barista_title">Barista</h4>
+            <p data-i18n="barista_desc">Our baristas are passionate about coffee and customer service. Carefully selected by JOB HUNT, they are trained to create a memorable experience in cafes, hotels, and specialty coffee shops.
+We provide baristas who:</p>
+           <ul>
+            <li data-i18n="barista_li1">• Are experts in preparing a wide range of coffee and espresso drinks</li>
+              <li data-i18n="barista_li2">• Understand coffee bean varieties and brewing techniques</li>
+              <li data-i18n="barista_li3">• Maintain cleanliness and organization in their stations</li>
+              <li data-i18n="barista_li4">• Have a friendly and engaging customer approach</li>
+              <li data-i18n="barista_li5">• Are trained in POS systems and order handling</li>
+           </ul>
+
+<br>
+<br>
+ <img id="waiter-image-nav" src="assets/images/smiling-looking-friendly-showing-number-four (1).jpg" alt="">
+            <h4 data-i18n="waiter_title">Waiters &amp; Waiteresses </h4>
+            <p data-i18n="waiter_desc">JOB HUNT RESOURCING COMPANY provides highly trained and customer-oriented waitresses ready to serve in hotels, restaurants, resorts, and catering events worldwide. We select candidates with the right balance of hospitality, communication skills, and efficiency to ensure top-level service.
+Our waitresses are:</p>
+ <ul>
+            <li data-i18n="waiter_li1">• Skilled in taking and delivering food & beverage orders accurately</li>
+              <li data-i18n="waiter_li2">• Friendly, polite, and fluent in English</li>
+              <li data-i18n="waiter_li3">• Trained in handling customer complaints and feedback professionally</li>
+              <li data-i18n="waiter_li4">• Neat in appearance and follow hygiene standards</li>
+              <li data-i18n="waiter_li5">• Able to multitask and work under pressure</li>
+           </ul>
+          
+          </article>
+
+           <article id='tabs-6'>
+            <img src="assets/images/nailtechnicien1.jfif" alt="">
+            <h4 data-i18n="NAIL_title">NAIL TECHNICIANS</h4>
+            <p data-i18n="NAIL_desc">JOB HUNT supplies nail technicians who are creative, detail-oriented, and certified in beauty and wellness care. Our technicians are equipped to work in salons, spas, and personal care services abroad.
+We provide nail technicians with:</p>
+           <ul>
+            <li data-i18n="NAIL_li1">• Professional training in manicure, pedicure, nail art & gel application</li>
+              <li data-i18n="NAIL_li2">• Strong knowledge of hygiene and sanitation standards</li>
+              <li data-i18n="NAIL_li3">• Good communication and customer handling skills</li>
+              <li data-i18n="NAIL_li4">• Patience and precision in nail care and styling</li>
+              <li data-i18n="NAIL_li5">• Up-to-date knowledge of trends and tools</li>
+           </ul>
+<br>
+<br>
+           <img id="hair-salon-image-nav" src="assets/images/stylist-woman-taking-care-her-client-afro-hair (1).jpg" alt="">
+           <h4 data-i18n="HAIR_title">HAIR SALON WORKER</h4>
+            <p data-i18n="HAIR_desc">Our hair salon workers include hairstylists, assistants, and beauty care professionals capable of working in salons, hotels, and wellness centers. JOB HUNT ensures they meet international grooming and styling standards.
+We provide candidates who:</p>
+           <ul>
+            <li data-i18n="HAIR_li1">• Are skilled in cutting, styling, coloring, and treating hair</li>
+              <li data-i18n="HAIR_li2">• Understand diverse hair types and cultural preferences</li>
+              <li data-i18n="HAIR_li3">• Maintain clean and well-organized workstations</li>
+              <li data-i18n="HAIR_li4">• Are courteous, attentive, and fluent in English</li>
+              <li data-i18n="HAIR_li5">• Have certification from government or private beauty schools</li>
+           </ul>
+<br>
+<br>
+           <img id="massage-image-nav" src="assets/images/massage12.jfif" alt="">
+           <h4 data-i18n="MASSAGE">MASSAGE WORKER</h4>
+            <p data-i18n="beauty_desc">JOB HUNT delivers massage therapists with formal training and a gentle, professional approach. They are ready to work in spas, wellness clinics, resorts, and healthcare settings abroad.
+Our massage workers:</p>
+           <ul>
+            <li data-i18n="MASSAGE_li1">• Are trained in different techniques (Swedish, deep tissue, reflexology, etc.)</li>
+              <li data-i18n="MASSAGE_li2">• Understand anatomy and pressure point therapy</li>
+              <li data-i18n="MASSAGE_li3">• Maintain confidentiality and professionalism</li>
+              <li data-i18n="MASSAGE_li4">• Create a calm and relaxing environment for clients</li>
+              <li data-i18n="MASSAGE_li5">• Are certified and uphold hygiene and safety standards</li>
+           </ul>
+
+          </article>
+
+
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+   
+
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-partners owl-carousel">
+            
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Saudi_Arabia.svg.png" title="Saudi Arabia" alt="1">
+                <p><em> Saudi Arabia </em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Qatar.svg.png" title="Qatar" alt="2">
+                <p><em> Qatar</em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/Flag_of_Dubai.svg.png" title="Dubai" alt="3">
+                <p><em> Dubai </em></p>
+              </div>
+              
+              <div class="partner-item">
+                <img src="assets/images/256px-Flag_of_Kuwait.svg (1).png" title="Kuwait" alt="4">
+                <p><em> Kuwait </em></p>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="header_title">JOB HUNT</h4>
+            <p data-i18n="thank_you_footer" > THANK YOU, AND
+WE LOOK
+FORWARD TO
+WORKING WITH YOU. </p>
+           <!--  <ul class="social-icons">
+              <li><a rel="nofollow" href="https://fb.com/google" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              
+            </ul>
+            -->
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="infos_footer">INFOS</h4>
+            <ul class="menu-list">
+              <li><a href="#" data-i18n="thank_you_footer1"  >info@jobs -hunt. com</a></li>
+              <li><a href="#" data-i18n="thank_you_footer2"  >00254 703 952223</a></li>
+              <li><a href="#" data-i18n="thank_you_footer3"  >Nairobi, hurlingham, Kenya</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4 data-i18n="Additional_Pages"  >Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="about.html" data-i18n="about_us_nav"  >About Us</a></li>
+              <li><a href="services.html" data-i18n="services_nav"  >Our Services</a></li>
+              <li><a href="contact.html" data-i18n="contact_us_nav" >Contact Us</a></li>
+              <li><a href="#top" data-i18n="up_footer" >UP</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item">
+            <h4 data-i18n="contact_us_nav" >Contact Us</h4>
+            <div class="contact-form">
+              <form id="contact footer-contact" action="https://formspree.io/f/mdkzrnng" method="POST">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button" data-i18n="send_message_footer">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2025 JOB HUNT Co.,Ltd.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>
