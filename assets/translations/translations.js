@@ -179,7 +179,7 @@ const translations = {
     "view_map": "View on Google Maps",
     
     // Contact Form
-    "send_message_title": "Send us a",
+    "send_message_title": "Send us a message",
     "send_message_em": "message",
     "callback_request": "You want one of our managers to reach you?",
     "full_name_placeholder": "Full Name",
@@ -495,7 +495,7 @@ const translations = {
     "view_map": "Voir sur Google Maps",
     
     // Contact Form
-    "send_message_title": "Envoyez-nous un",
+    "send_message_title": "Envoyez-nous un message",
     "send_message_em": "message",
     "callback_request": "Vous souhaitez qu'un de nos managers vous contacte?",
     "full_name_placeholder": "Nom complet",
@@ -808,7 +808,7 @@ const translations = {
     "view_map": "عرض على خرائط جوجل",
     
     // Contact Form
-    "send_message_title": "أرسل لنا",
+    "send_message_title": " أرسل لنا رسالة",
     "send_message_em": "رسالة",
     "callback_request": "هل تريد أن يتواصل معك أحد مديرينا؟",
     "full_name_placeholder": "الاسم الكامل",
