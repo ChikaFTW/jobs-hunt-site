@@ -225,7 +225,7 @@ const config = {
     appId: '4f766f0f', // Keep your actual App ID
     appKey: '423697dcc76a00622c6c9c7323745e42', // Keep your actual App Key
     baseUrl: 'https://api.adzuna.com/v1/api/jobs',
-    defaultCountry: 'sg', // Change as default
+    defaultCountry: 'za', // if you want the deault to change got to html change the selected option in balise
     resultsPerPage: 4,
     defaultKeywords: '',
     categoryMappings: {
