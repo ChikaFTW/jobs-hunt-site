@@ -218,6 +218,256 @@ jQuery( document ).ready(function( $ ) {
     }
   });
 
+  // here am using " Adzuna Job API " 
+
+  // Configuration
+const config = {
+    appId: '4f766f0f', // Keep your actual App ID
+    appKey: '423697dcc76a00622c6c9c7323745e42', // Keep your actual App Key
+    baseUrl: 'https://api.adzuna.com/v1/api/jobs',
+    defaultCountry: 'fr', // Changed to Singapore as default
+    resultsPerPage: 4,
+    defaultKeywords: '',
+    categoryMappings: {
+        'healthcare': 'healthcare',
+        'transport-logistics': 'transport-logistics',
+        'security': 'security',
+        'beauty': 'beauty',
+        'domestic-help-cleaning': 'domestic-help-cleaning',
+        'hospitality-catering': 'hospitality-catering',
+        'construction': 'construction'
+    }
+    
+};
 
 
+// State management
+let currentPage = 1;
+let totalPages = 1;
 
+// DOM Elements
+const elements = {
+    keywordsInput: document.getElementById('job-keywords'),
+    locationInput: document.getElementById('job-location'),
+    countrySelect: document.getElementById('job-country'),
+    categorySelect: document.getElementById('job-category'),
+    searchButton: document.getElementById('search-jobs'),
+    resultsContainer: document.getElementById('job-results'),
+    loadingIndicator: document.getElementById('loading'),
+    prevPageButton: document.getElementById('prev-page'),
+    nextPageButton: document.getElementById('next-page'),
+    pageInfo: document.getElementById('page-info')
+};
+
+// Fetch jobs from Adzuna API
+async function fetchJobs() {
+    const country = elements.countrySelect.value || config.defaultCountry;
+    const keywords = elements.keywordsInput.value || config.defaultKeywords;
+    const location = elements.locationInput.value;
+    const category = elements.categorySelect.value;
+    const endpoint = `${config.baseUrl}/${country}/search/${currentPage}`;
+
+    if (elements.countrySelect.value === 'all') {
+        return fetchAllCountriesJobs();
+    }
+    
+    let params = new URLSearchParams({
+        app_id: config.appId,
+        app_key: config.appKey,
+        results_per_page: config.resultsPerPage,
+        what: keywords
+    });
+    
+    if (location) params.append('where', location);
+    if (category) params.append('category', category);
+    
+     try {
+        showLoading(true);
+        const response = await fetch(`${endpoint}?${params.toString()}`);
+        
+        if (!response.ok) throw new Error(`API request failed with status ${response.status}`);
+        
+        const data = await response.json();
+        
+        // Fix pagination when no results
+        if (!data.results || data.results.length === 0) {
+            totalPages = 1;
+            currentPage = 1;
+            updatePagination();
+            return { results: [] };
+        }
+        
+        totalPages = Math.ceil(data.count / config.resultsPerPage);
+        updatePagination();
+        return data;
+    } catch (error) {
+        console.error('Error fetching jobs:', error);
+        showError(error.message);
+        return { results: [] };
+    } finally {
+        showLoading(false);
+    }
+}
+
+// Display jobs in the UI
+function displayJobs(jobs) {
+    elements.resultsContainer.innerHTML = '';
+    
+    if (!jobs.results || jobs.results.length === 0) {
+        elements.resultsContainer.innerHTML = `
+            <div class="no-results">
+                <p>No jobs found matching your criteria.</p>
+                <p>Try adjusting your search filters.</p>
+            </div>
+        `;
+        return;
+    }
+    
+    jobs.results.forEach(job => {
+        const jobCard = document.createElement('div');
+        jobCard.className = 'job-card';
+        
+        // Format salary information
+        let salaryInfo = 'Not specified';
+        if (job.salary_min || job.salary_max) {
+            const min = job.salary_min ? formatSalary(job.salary_min) : 'N/A';
+            const max = job.salary_max ? formatSalary(job.salary_max) : 'N/A';
+            salaryInfo = `${min} - ${max} ${job.salary_currency || ''}`;
+        }
+        
+        // Format contract time
+        const contractTime = job.contract_time ? 
+            job.contract_time.charAt(0).toUpperCase() + job.contract_time.slice(1) : 
+            'Not specified';
+        
+        jobCard.innerHTML = `
+            <h3>${job.title}</h3>
+            <p class="company"><strong>Company:</strong> ${job.company?.display_name || 'Not specified'}</p>
+            <p class="location"><strong>Location:</strong> ${job.location?.display_name || 'Remote'}</p>
+            <p class="salary"><strong>Salary:</strong> ${salaryInfo}</p>
+            <p class="contract"><strong>Contract:</strong> ${contractTime}</p>
+            <div class="description">
+                ${truncateDescription(job.description, 200)}
+            </div>
+            <a href="${job.redirect_url}" target="_blank" rel="noopener noreferrer" class="view-job">
+                View Job Details
+            </a>
+            <p class="posted-date"><small>Posted: ${formatDate(job.created)}</small></p>
+        `;
+        
+        elements.resultsContainer.appendChild(jobCard);
+    });
+}
+
+// Helper functions
+function formatSalary(amount) {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0
+    }).format(amount).replace(/^[A-Z]+\s/, ''); // Remove currency prefix if any
+}
+
+function truncateDescription(text, maxLength) {
+    if (!text) return '';
+    if (text.length <= maxLength) return text;
+    return `${text.substring(0, maxLength)}...`;
+}
+
+function formatDate(dateString) {
+    if (!dateString) return 'Unknown';
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString('en-US', options);
+}
+
+function showLoading(show) {
+    elements.loadingIndicator.style.display = show ? 'block' : 'none';
+}
+
+function showError(message) {
+    elements.resultsContainer.innerHTML = `
+        <div class="error-message">
+            <p>Error loading jobs: ${message}</p>
+            <p>Please try again later.</p>
+        </div>
+    `;
+}
+
+function updatePagination() {
+    elements.pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+    elements.prevPageButton.disabled = currentPage <= 1;
+    elements.nextPageButton.disabled = currentPage >= totalPages;
+}
+
+// Event listeners
+elements.searchButton.addEventListener('click', async () => {
+    currentPage = 1;
+    const jobs = await fetchJobs();
+    displayJobs(jobs);
+});
+
+elements.prevPageButton.addEventListener('click', async () => {
+    if (currentPage > 1) {
+        currentPage--;
+        const jobs = await fetchJobs();
+        displayJobs(jobs);
+    }
+});
+
+elements.nextPageButton.addEventListener('click', async () => {
+    if (currentPage < totalPages) {
+        currentPage++;
+        const jobs = await fetchJobs();
+        displayJobs(jobs);
+    }
+});
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', async () => {
+    // Set default country if available
+    if (navigator.language) {
+        const userCountry = navigator.language.split('-')[1]?.toLowerCase();
+        if (userCountry && elements.countrySelect.querySelector(`option[value="${userCountry}"]`)) {
+            elements.countrySelect.value = userCountry;
+        }
+    }
+    
+    // Load initial jobs
+    const jobs = await fetchJobs();
+    displayJobs(jobs);
+});
+
+
+// end Adzuna 
+
+// Simple caching implementation
+const cache = {
+    data: null,
+    timestamp: null,
+    ttl: 30 * 60 * 1000 // 30 minutes
+};
+
+async function fetchJobsWithCache() {
+    const now = Date.now();
+    const cacheKey = JSON.stringify({
+        country: elements.countrySelect.value,
+        keywords: elements.keywordsInput.value,
+        location: elements.locationInput.value,
+        category: elements.categorySelect.value,
+        page: currentPage
+    });
+    
+    if (cache.data && cache.timestamp && (now - cache.timestamp) < cache.ttl) {
+        return cache.data;
+    }
+    
+    const data = await fetchJobs();
+    cache.data = data;
+    cache.timestamp = now;
+    return data;
+}
+// end cashing adzuna and """"  future local storage under it 
+
+// add multi country search
+
+// end multi country search
