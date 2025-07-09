@@ -225,7 +225,7 @@ const config = {
     appId: '4f766f0f', // Keep your actual App ID
     appKey: '423697dcc76a00622c6c9c7323745e42', // Keep your actual App Key
     baseUrl: 'https://api.adzuna.com/v1/api/jobs',
-    defaultCountry: 'za', // Changed to Singapore as default
+    defaultCountry: 'sg', // Change as default
     resultsPerPage: 4,
     defaultKeywords: '',
     categoryMappings: {
@@ -267,9 +267,6 @@ async function fetchJobs() {
     const category = elements.categorySelect.value;
     const endpoint = `${config.baseUrl}/${country}/search/${currentPage}`;
 
-    if (elements.countrySelect.value === 'all') {
-        return fetchAllCountriesJobs();
-    }
     
     let params = new URLSearchParams({
         app_id: config.appId,
@@ -424,15 +421,14 @@ elements.nextPageButton.addEventListener('click', async () => {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', async () => {
-    // Set default country if available
-    if (navigator.language) {
-        const userCountry = navigator.language.split('-')[1]?.toLowerCase();
-        if (userCountry && elements.countrySelect.querySelector(`option[value="${userCountry}"]`)) {
-            elements.countrySelect.value = userCountry;
-        }
-    }
+   // 1. Get the ACTUAL selected value from HTML (South Africa)
+    const defaultCountry = elements.countrySelect.value;
+    console.log('Default country from HTML:', defaultCountry); // Should log 'za'
     
-    // Load initial jobs
+    // 2. Remove the navigator.language override completely
+    
+    // 3. Load jobs for the DEFAULT country (South Africa)
+    currentPage = 1;
     const jobs = await fetchJobs();
     displayJobs(jobs);
 });
