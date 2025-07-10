@@ -225,7 +225,7 @@ const config = {
     appId: '4f766f0f', // Keep your actual App ID
     appKey: '423697dcc76a00622c6c9c7323745e42', // Keep your actual App Key
     baseUrl: 'https://api.adzuna.com/v1/api/jobs',
-    defaultCountry: 'za', // if you want the deault to change got to html change the selected option in balise
+    defaultCountry: 'za', // Change as default from the selec
     resultsPerPage: 4,
     defaultKeywords: '',
     categoryMappings: {
@@ -320,7 +320,7 @@ function displayJobs(jobs) {
         return;
     }
     
-    jobs.results.forEach(job => {
+        jobs.results.forEach(job => {
         const jobCard = document.createElement('div');
         jobCard.className = 'job-card';
         
@@ -365,6 +365,7 @@ function formatSalary(amount) {
     }).format(amount).replace(/^[A-Z]+\s/, ''); // Remove currency prefix if any
 }
 
+
 function truncateDescription(text, maxLength) {
     if (!text) return '';
     if (text.length <= maxLength) return text;
@@ -400,14 +401,16 @@ function updatePagination() {
 elements.searchButton.addEventListener('click', async () => {
     currentPage = 1;
     const jobs = await fetchJobs();
-    displayJobs(jobs);
+    const recentJobs = filterRecentJobs(jobs.results || []);
+    displayJobs({ results: recentJobs });
 });
 
 elements.prevPageButton.addEventListener('click', async () => {
     if (currentPage > 1) {
         currentPage--;
         const jobs = await fetchJobs();
-        displayJobs(jobs);
+        const recentJobs = filterRecentJobs(jobs.results || []);
+        displayJobs({ results: recentJobs });
     }
 });
 
@@ -415,23 +418,29 @@ elements.nextPageButton.addEventListener('click', async () => {
     if (currentPage < totalPages) {
         currentPage++;
         const jobs = await fetchJobs();
-        displayJobs(jobs);
+        const recentJobs = filterRecentJobs(jobs.results || []);
+        displayJobs({ results: recentJobs });
     }
 });
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', async () => {
-   // 1. Get the ACTUAL selected value from HTML (South Africa)
     const defaultCountry = elements.countrySelect.value;
-    console.log('Default country from HTML:', defaultCountry); // Should log 'za'
-    
-    // 2. Remove the navigator.language override completely
-    
-    // 3. Load jobs for the DEFAULT country (South Africa)
     currentPage = 1;
     const jobs = await fetchJobs();
-    displayJobs(jobs);
+    const recentJobs = filterRecentJobs(jobs.results || []);
+    displayJobs({ results: recentJobs });
 });
+
+function filterRecentJobs(jobsArray) {
+    const today = new Date();
+    const sixtyDaysAgo = new Date();
+    sixtyDaysAgo.setDate(today.getDate() - 60);
+    return jobsArray.filter(job => {
+    const jobDate = new Date(job.created);
+    return jobDate >= sixtyDaysAgo;
+    });
+}
 
 
 // end Adzuna 
@@ -452,11 +461,9 @@ async function fetchJobsWithCache() {
         category: elements.categorySelect.value,
         page: currentPage
     });
-    
     if (cache.data && cache.timestamp && (now - cache.timestamp) < cache.ttl) {
         return cache.data;
     }
-    
     const data = await fetchJobs();
     cache.data = data;
     cache.timestamp = now;
