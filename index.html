@@ -522,7 +522,7 @@
           </div>
           <div class="col-md-12">
             <div class="contact-form">
-              <form id="contact" action="https://formspree.io/f/mdkzrnng" method="POST">
+              <form id="contact" action="https://formbold.com/s/3w2Wk" method="POST">
                 <div class="row">
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
@@ -630,7 +630,7 @@ WORKING WITH YOU. </p>
           <div class="col-md-3 footer-item last-item">
            <h4 data-i18n="contact_us_nav" >Contact Us</h4>
             <div class="contact-form">
-              <form id="contact footer-contact" action="https://formspree.io/f/mdkzrnng" method="POST">
+              <form id="contact footer-contact" action="https://formbold.com/s/3w2Wk" method="POST">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
@@ -691,52 +691,7 @@ WORKING WITH YOU. </p>
       }
     </script>
 
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const forms = document.querySelectorAll('form[action="https://formspree.io/f/mdkzrnng"]');
-
-  forms.forEach(form => {
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-
-      const button = form.querySelector("button[type='submit']");
-      const originalText = button.innerHTML;
-
-      // Show spinner
-      button.disabled = true;
-      button.innerHTML = `<span class="loader"></span> Sending...`;
-
-      const formData = new FormData(form);
-
-      try {
-        const response = await fetch(form.action, {
-          method: form.method,
-          body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
-        });
-
-        if (response.ok) {
-          form.reset();
-          button.innerHTML = "✅ Message Sent!";
-          button.classList.add('success');
-        } else {
-          button.innerHTML = "❌ Failed to send.";
-        }
-      } catch (error) {
-        button.innerHTML = "❌ Error occurred.";
-      }
-
-      setTimeout(() => {
-        button.innerHTML = originalText;
-        button.disabled = false;
-        button.classList.remove('success');
-      }, 3000);
-    });
-  });
-});
-</script>
+    
 
   </body>
 </html>

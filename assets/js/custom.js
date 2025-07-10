@@ -473,7 +473,7 @@ async function fetchJobsWithCache() {
 
 // add form clear to the form logic
 document.addEventListener("DOMContentLoaded", function () {
-  const forms = document.querySelectorAll('form[action="https://formspree.io/f/mdkzrnng"]');
+  const forms = document.querySelectorAll('form[action="https://formbold.com/s/3w2Wk"]');
 
   forms.forEach(form => {
     form.addEventListener("submit", async function (e) {
