@@ -471,6 +471,52 @@ async function fetchJobsWithCache() {
 }
 // end cashing adzuna and """"  future local storage under it 
 
-// add multi country search
+// add form clear to the form logic
+document.addEventListener("DOMContentLoaded", function () {
+  const forms = document.querySelectorAll('form[action="https://formspree.io/f/mdkzrnng"]');
 
-// end multi country search
+  forms.forEach(form => {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const button = form.querySelector("button[type='submit']");
+      const originalText = button.innerHTML;
+
+      // Show loading spinner
+      button.disabled = true;
+      button.innerHTML = `<span class="loader"></span> Sending...`;
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          form.reset();
+          button.innerHTML = "✅ Message Sent!";
+          button.classList.add('success');
+        } else {
+          button.innerHTML = "❌ Failed to send.";
+        }
+      } catch (error) {
+        button.innerHTML = "❌ Error occurred.";
+      }
+
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.disabled = false;
+        button.classList.remove('success');
+      }, 3000);
+    });
+  });
+});
+
+
+// end 
+

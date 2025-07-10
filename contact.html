@@ -327,7 +327,7 @@ WORKING WITH YOU. </p>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
 
-    <script language = "text/Javascript"> 
+   <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the
       if(! cleared[t.id]){                      // function makes it static and global
@@ -337,6 +337,54 @@ WORKING WITH YOU. </p>
           }
       }
     </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const forms = document.querySelectorAll('form[action="https://formspree.io/f/mdkzrnng"]');
+
+  forms.forEach(form => {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const button = form.querySelector("button[type='submit']");
+      const originalText = button.innerHTML;
+
+      // Show spinner
+      button.disabled = true;
+      button.innerHTML = `<span class="loader"></span> Sending...`;
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          form.reset();
+          button.innerHTML = "✅ Message Sent!";
+          button.classList.add('success');
+        } else {
+          button.innerHTML = "❌ Failed to send.";
+        }
+      } catch (error) {
+        button.innerHTML = "❌ Error occurred.";
+      }
+
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.disabled = false;
+        button.classList.remove('success');
+      }, 3000);
+    });
+  });
+});
+</script>
+
 
   </body>
 </html>
