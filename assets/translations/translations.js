@@ -304,6 +304,7 @@ const translations = {
     "MASSAGE_li5": "• Are certified and uphold hygiene and safety standards",
     "resto_tab": "Restaurant & Coffee Staff",
     "Beauty_tab": "Beauty & Wellness Services",
+    "findjob_button":"Find Jobs",
     
 
   },
@@ -625,6 +626,7 @@ const translations = {
     "MASSAGE_li5": "• Certifiés et respectent les normes d’hygiène",
      "resto_tab": "Personnel de Restaurant & Café",
     "Beauty_tab": "Services de Beauté et Bien-être",
+    "findjob_button":"Trouver des emplois",
     
   },
 
@@ -940,6 +942,7 @@ const translations = {
     "MASSAGE_li5": "• معتمدون ويتبعون معايير النظافة والسلامة",
     "resto_tab": "موظفو المطاعم والمقاهي",
     "Beauty_tab": "خدمات التجميل والعناية",
+    "findjob_button": "ابحث عن وظائف",
 
   }
 };
