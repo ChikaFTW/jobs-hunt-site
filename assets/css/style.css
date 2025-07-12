@@ -1044,6 +1044,7 @@ ul.slick-dots {
 
 .testimonials {
 	margin-top: 140px;
+	/* background-color: #f7f7f7; */
 	background-color: #f7f7f7;
 	padding: 140px 0px;
 }
@@ -1102,7 +1103,7 @@ ul.slick-dots {
 }
 
 .callback-form .contact-form {
-	background-color: #002B45;
+	background-color: #232323;
 	padding: 60px;
 	border-radius: 5px;
 	text-align: center;
