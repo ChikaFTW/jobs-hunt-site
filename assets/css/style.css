@@ -1434,6 +1434,10 @@ footer .contact-form button.filled-button:hover {
 	padding: 120px 0px;
 }
 
+.team-item {
+	padding-top: 7px;
+}
+
 .team-item img {
 	width: 100%;
 	overflow: hidden;
@@ -1448,7 +1452,7 @@ footer .contact-form button.filled-button:hover {
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: 0.25px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .team-item .down-content span {
