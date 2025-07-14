@@ -103,14 +103,14 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>JOBS Hunt</h2></a>
+          <a class="navbar-brand" href="index.html"><h2 data-i18n="header_title">JOBS Hunt</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html"><span data-i18n="home_nav" > Home </span>
+                <a class="nav-link" href="#top"><span data-i18n="home_nav" > Home </span>
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -123,12 +123,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html"><span data-i18n="contact_us_nav" >Contact Us</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="philippines.html">
-                <img src="assets/images/Flag_orb_Philippines.svg.png" alt="PH Flag" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 6px;">
-                <span data-i18n="nav_philippines">Philippines</span>  </a>
-              </li>
-
               <!-- <li class="nav-item">
                 <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
               </li> -->
@@ -703,18 +697,5 @@ WORKING WITH YOU. </p>
           }
       }
     </script>
-
-<!-- Register service worker-->
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(function(reg) {
-        console.log('✅ Service Worker registered.', reg.scope);
-      })
-      .catch(function(error) {
-        console.error('❌ Service Worker registration failed:', error);
-      });
-  }
-</script>
   </body>
 </html>
