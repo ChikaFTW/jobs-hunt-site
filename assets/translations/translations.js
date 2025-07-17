@@ -89,10 +89,10 @@ const translations = {
     "contract_terms_button": "Read More",
     
     // Stats Section
-    "work_hours_body": "Work Hours",
+    "work_hours_body": "Saudi Clients",
     "great_reviews_body": "Great Reviews",
     "project_done_done": "Projects Done",
-    "awards_won_body": "Awards Won",
+    "awards_won_body": "Different Countries",
     "who_we_are": "Who we are",
     "who_we_are_1": "Get to know about our company",
     "who_we_are_2": "JOBS HUNT RESOURCING Ltd is a fully registered and licensed recruitment company based in Nairobi, Kenya that offers International and Local job placements in all job sectors.",
@@ -305,9 +305,43 @@ const translations = {
     "resto_tab": "Restaurant & Coffee Staff",
     "Beauty_tab": "Beauty & Wellness Services",
     "findjob_button":"Find Jobs",
+
+// philippines translations
+    "section.philippines": "Philippine Services",
+    "service.skilled_worker.title": "Provide Skilled Worker",
+    "service.job_order.title": "Approve Skilled Job Order", 
+    "service.nurse_license.title": "Nurses with Saudi License",
+    "service.licensed_agency.title": "Provide Philippines Licensed Agencies",
+    "service.reentry.title": "R-Entry Contract + E-Travel Assistance",
+    "service.skilled_worker.desc": "We are pleased to assist you in recruiting highly skilled Filipino workers to meet your staffing needs. Our process involves understanding your specific job orders and matching them with qualified professionals from the Philippines, known for their strong work ethic, technical expertise, and adaptability.",
+    "service.skilled_worker.desc1": "Our service includes:",
+    "service.job_order.desc": "Thank you for trusting our services for your manpower needs. We’re pleased to assist you with the approval and processing of job orders for skilled Filipino workers. Our experienced team ensures every order is thoroughly reviewed and meets the labor regulations of both the Philippines and the destination country. We collaborate with licensed agencies and the POEA administration to validate documents, verify roles, and obtain approvals on time. Our priority is to simplify the process while ensuring transparency, legal compliance, and professionalism.",
+    "service.nurse_license.desc":"Thank you for considering our services for your staffing needs. We are pleased to assist you in hiring qualified Filipino nurses who hold valid Saudi licenses. Our process involves a thorough screening and verification to ensure that the nurses possess the necessary credentials, licenses, and clinical experience aligned with your requirements. We coordinate with relevant licensing authorities in Saudi Arabia to authenticate their licenses and ensure compliance with local regulations. Once verified, we facilitate the recruitment, documentation, and onboarding processes, providing you with competent and licensed healthcare professionals ready to contribute to your organization. We are committed to delivering high-quality candidates and maintaining a transparent, efficient hiring process. Should you have any specific criteria or further questions, please feel free to reach out. Thank you for trusting us with your staffing needs.",
+    "service.licensed_agency.desc" : "We are committed to providing you with dedicated assistance in achieving your business objectives. Our team will work closely with you to understand your specific needs and guide you through the process of establishing a business agreement with reputable, licensed Filipino agencies. Our goal is to ensure a smooth and transparent partnership by leveraging our expertise and professional network within the Philippines. We handle all necessary communications, documentation, and negotiations to secure the best terms for your business. Rest assured, we prioritize professionalism, compliance, and your success in every step of this process.",
+    "service.reentry.desc":"We are pleased to assist you with your request for a reentry contract that facilitates your travel from the Philippines back to Saudi Arabia without the need for a visa. Our team is working diligently to prepare and process the necessary documentation to ensure a smooth and hassle-free reentry process. This reentry contract is designed to streamline your travel arrangements, providing you with a legal and efficient pathway to return to Saudi Arabia. We will keep you updated throughout the process and ensure all requirements are met to comply with relevant regulations. Thank you for trusting us with your travel needs. Should you have any questions or require further assistance, please do not hesitate to contact us.",
+    "service.etravel.desc":"Thank you for choosing our services for your e-travel documentation needs. We are committed to providing efficient and reliable assistance in processing electronic travel documents for Filipino workers. Our team will carefully review your request and gather all necessary information to ensure compliance with the relevant regulations. We will facilitate the preparation and submission of the e-travel documentation, streamlining the process to save you time and effort. Rest assured, we prioritize accuracy and security in handling your data, and we will keep you updated throughout each step of the process. Should you have any questions or require further assistance, please do not hesitate to contact us. Thank you for trusting us with your requirements. We look forward to serving you.",
+    "nav_kenya": "Kenya",
+
+    "skilled_worker.intro": "We are pleased to assist you in sourcing highly skilled Filipino workers to meet your staffing requirements. Our process involves carefully understanding your specific job orders and matching them with qualified professionals from the Philippines, known for their exceptional work ethic, technical expertise, and adaptability.",
+    "skilled_worker.service_title": "Our Service Includes:",
+    "skilled_worker.service_1": "• Comprehensive Candidate Screening: We conduct thorough assessments to ensure candidates possess the necessary skills, experience, and certifications relevant to your industry.",
+    "skilled_worker.service_2": "• Compliance & Documentation: We handle all necessary paperwork, including work permits, visas, and employment contracts, ensuring adherence to legal and regulatory standards.",
+    "skilled_worker.service_3": "• Skill Verification: We validate the proficiency and credentials of each candidate to guarantee quality and reliability.",
+    "skilled_worker.service_4": "• Customized Job Matching: We tailor our search to align with your specific job descriptions, company culture, and project needs.",
+    "skilled_worker.advantages": "Partnering with Filipino skilled workers offers numerous advantages such as high productivity, excellent communication skills, and a strong work ethic.",
+    "skilled_worker.conclusion": "We are committed to providing you with dependable talent that can contribute effectively to your business operations. Please feel free to contact us for more details or to discuss your specific requirements.",
     
+    "ph_slide1_title":"Skilled Filipino Nurses",
+    "ph_slide1_desc":"Certified & experienced professionals ready to serve internationally.",
+    "ph_slide2_title":"Wellness Experts",
+    "ph_slide2_desc":"Massage therapists and spa staff with international exposure.",
+    "ph_slide3_title":"Licensed Agencies",
+    "ph_slide3_desc":"Smooth & transparent partnership",
+ 
+
 
   },
+
 
 
 
@@ -405,10 +439,10 @@ const translations = {
     "contract_terms_button": "Lire la suite",
     
     // Stats Section
-    "work_hours_body": "Heures de travail",
+    "work_hours_body": "Clients saoudiens",
     "great_reviews_body": "Excellent avis",
     "project_done_done": "Projets réalisés",
-    "awards_won_body": "Prix remportés",
+    "awards_won_body": "Différents pays",
 
     // Who we are 
     "who_we_are": "Qui nous sommes",
@@ -627,7 +661,42 @@ const translations = {
      "resto_tab": "Personnel de Restaurant & Café",
     "Beauty_tab": "Services de Beauté et Bien-être",
     "findjob_button":"Trouver des emplois",
-    
+
+    //philippines html trnslt
+    "section.philippines": "Services aux Philippines",
+    "service.skilled_worker.title": "Fournir des travailleurs qualifiés",
+    "service.job_order.title": "Approbation de l'ordre de mission qualifié",
+    "service.nurse_license.title": "Infirmiers titulaires d'une licence saoudienne",
+    "service.licensed_agency.title": "Fournir des agences agréées aux Philippines",
+    "service.reentry.title": "Contrat de réentrée + Assistance E-Travel",
+    "section.philippines": "Services aux Philippines",
+    "service_skilled_worker_desc_11": "Nous sommes heureux de vous aider à recruter des travailleurs philippins hautement qualifiés pour répondre à vos besoins en personnel. Notre processus consiste à comprendre vos ordres de mission spécifiques et à les faire correspondre à des professionnels qualifiés des Philippines, réputés pour leur éthique de travail, leur expertise technique et leur adaptabilité exceptionnelles.",
+   "service.job_order.desc": "Merci de faire appel à nos services pour répondre à vos besoins en personnel. Nous sommes heureux de vous accompagner dans l’approbation et le traitement des ordres de mission pour les travailleurs qualifiés philippins. Notre équipe expérimentée s’assure que chaque ordre est soigneusement examiné et conforme aux réglementations du travail des Philippines et du pays de destination. Nous collaborons avec des agences agréées et l'administration POEA pour valider les documents, vérifier les postes et obtenir les approbations dans les délais. Notre priorité est de simplifier le processus tout en garantissant la transparence, la conformité légale et le professionnalisme.",
+    "service.nurse_license.desc":"Merci de considérer nos services pour vos besoins en recrutement. Nous sommes heureux de vous aider à recruter des infirmiers philippins qualifiés titulaires de licences saoudiennes valides. Notre processus comprend un contrôle rigoureux et une vérification pour garantir que les infirmiers possèdent les qualifications, licences et expériences cliniques nécessaires, conformes à vos exigences. Nous coordonnons avec les autorités de licence compétentes en Arabie saoudite pour authentifier les licences et garantir la conformité aux réglementations locales. Une fois vérifiés, nous facilitons le recrutement, la documentation et l'intégration, vous fournissant des professionnels de santé compétents et licenciés. Nous nous engageons à fournir des candidats de haute qualité et à maintenir un processus de recrutement transparent et efficace. Si vous avez des critères spécifiques ou des questions, n'hésitez pas à nous contacter. Merci de nous faire confiance pour vos besoins en recrutement.",
+    "service.licensed_agency.desc" : "Nous nous engageons à vous fournir une assistance dédiée pour atteindre vos objectifs commerciaux. Notre équipe travaillera en étroite collaboration avec vous pour comprendre vos besoins spécifiques et vous guider dans l’établissement d’un accord avec des agences philippines agréées et réputées. Notre objectif est de garantir un partenariat fluide et transparent en tirant parti de notre expertise et de notre réseau professionnel aux Philippines. Nous prenons en charge toutes les communications, la documentation et les négociations nécessaires afin de vous obtenir les meilleures conditions. Soyez assurés que nous mettons le professionnalisme, la conformité et votre succès au cœur de chaque étape de ce processus.",
+    "service.reentry.desc":"Nous sommes ravis de vous assister dans votre demande de contrat de réentrée facilitant votre retour des Philippines vers l’Arabie saoudite sans besoin de visa. Notre équipe travaille activement à préparer et traiter les documents nécessaires pour garantir un processus fluide et sans tracas. Ce contrat de réentrée est conçu pour simplifier vos démarches de voyage, vous offrant une solution légale et efficace pour retourner en Arabie saoudite. Nous vous tiendrons informé à chaque étape et veillerons à respecter toutes les exigences réglementaires. Merci de votre confiance. N’hésitez pas à nous contacter pour toute question ou assistance supplémentaire.",
+    "service.etravel.desc":"Merci d’avoir choisi nos services pour vos besoins en documentation e-travel. Nous nous engageons à vous fournir une assistance fiable et efficace dans le traitement des documents de voyage électroniques pour les travailleurs philippins. Notre équipe examinera soigneusement votre demande et collectera toutes les informations nécessaires pour garantir le respect des réglementations en vigueur. Nous faciliterons la préparation et la soumission des documents afin de vous faire gagner du temps et des efforts. Soyez assuré que nous accordons la priorité à la précision et à la sécurité de vos données, et que nous vous tiendrons informé tout au long du processus. Pour toute question ou assistance, n'hésitez pas à nous contacter. Merci pour votre confiance. Nous sommes impatients de vous servir.",
+    "nav_kenya": "Kenya",
+    "skilled_worker.intro": "Nous sommes heureux de vous aider à recruter des travailleurs philippins hautement qualifiés pour répondre à vos besoins en personnel. Notre processus consiste à comprendre vos ordres de mission spécifiques et à les faire correspondre à des professionnels qualifiés des Philippines, réputés pour leur éthique de travail, leur expertise technique et leur adaptabilité exceptionnelles.",
+    "skilled_worker.service_title": "Nos services incluent :",
+    "skilled_worker.service_1": "• Sélection complète des candidats : nous effectuons des évaluations approfondies pour garantir que les candidats possèdent les compétences, l’expérience et les certifications nécessaires dans votre secteur.",
+    "skilled_worker.service_2": "• Conformité et documentation : nous gérons toute la paperasse nécessaire, y compris les permis de travail, les visas et les contrats d'emploi, en veillant au respect des normes légales et réglementaires.",
+    "skilled_worker.service_3": "• Vérification des compétences : nous validons la maîtrise et les qualifications de chaque candidat pour garantir la qualité et la fiabilité.",
+    "skilled_worker.service_4": "• Correspondance personnalisée : nous adaptons notre recherche à vos descriptions de poste, à votre culture d’entreprise et à vos besoins spécifiques.",
+    "skilled_worker.advantages": "Travailler avec des travailleurs philippins qualifiés offre de nombreux avantages, tels qu’une grande productivité, d’excellentes compétences en communication et une solide éthique de travail.",
+    "skilled_worker.conclusion": "Nous nous engageons à vous fournir des talents fiables capables de contribuer efficacement à vos opérations. N'hésitez pas à nous contacter pour plus de détails ou pour discuter de vos besoins spécifiques.",
+      "ph_slide1_title":"Infirmières philippines qualifiées",
+    "ph_slide1_desc":"Professionnels certifiés et expérimentés prêts à servir à l'international.",
+    "ph_slide2_title":"Experts en bien-être",
+    "ph_slide2_desc":"Thérapeutes de massage et personnel de spa ayant une expérience internationale.",
+    "ph_slide3_title":"Agences agréées",
+    "ph_slide3_desc":"Partenariat fluide et transparent",
+ 
+
+
+ 
+
+
   },
 
 
@@ -724,10 +793,10 @@ const translations = {
     "contract_terms_button": "اقرأ المزيد",
     
     // Stats Section
-    "work_hours_body": "ساعات العمل",
+    "work_hours_body": "العملاء السعوديون",
     "great_reviews_body": "تقييمات رائعة",
     "project_done_done": "المشاريع المكتملة",
-    "awards_won_body": "الجوائز المحرزة",
+    "awards_won_body": "دول مختلفة",
     "who_we_are": "من نحن",
     "who_we_are_1": "تعرف على شركتنا",
     "who_we_are_2": "JOBS Hunt RESOURCING Ltd هي شركة توظيف مسجلة بالكامل ومرخصة مقرها في نيروبي، كينيا، وتقدم فرص عمل دولية ومحلية في جميع قطاعات العمل",
@@ -944,5 +1013,46 @@ const translations = {
     "Beauty_tab": "خدمات التجميل والعناية",
     "findjob_button": "ابحث عن وظائف",
 
+
+    // philippines trnslt
+"section.philippines": "الخدمات الفلبينية",
+"service.skilled_worker.title": "توفير العمال المهرة",
+"service.job_order.title": "الموافقة على أمر توظيف العمالة المهرة",
+"service.nurse_license.title": "ممرضون يحملون رخصة سعودية",
+"service.licensed_agency.title": "توفير وكالات مرخصة من الفلبين",
+"service.reentry.title": "عقد إعادة الدخول + دعم السفر الإلكتروني",
+"service_skilled_worker_desc_11": "يسعدنا مساعدتكم في توفير عمال فلبينيين ذوي كفاءة عالية لتلبية احتياجاتكم من الموارد البشرية. يشمل عملنا فهمًا دقيقًا لأوامر العمل الخاصة بكم ومطابقتها مع مهنيين مؤهلين من الفلبين يتميزون بأخلاقيات عمل قوية، وكفاءة فنية، وقدرة عالية على التكيّف.",
+"service_skilled_worker_desc_1": "تشمل خدماتنا:",
+"service_skilled_worker_desc_11_2": "• فحص شامل للمرشحين: نقوم بتقييمات دقيقة للتأكد من امتلاك المرشحين المهارات والخبرة والشهادات المطلوبة في مجالكم.",
+"service_skilled_worker_desc3": "• الالتزام والتوثيق: نتولى جميع المستندات الضرورية مثل تصاريح العمل، والتأشيرات، وعقود العمل بما يتوافق مع اللوائح القانونية.",
+"service_skilled_worker_desc4": "• التحقق من المهارات: نؤكد كفاءة المرشحين ومؤهلاتهم لضمان الجودة والمصداقية.",
+"service_skilled_worker_desc5": "• مطابقة الوظائف بشكل مخصص: نلائم بحثنا مع متطلباتكم الوظيفية المحددة، وثقافة شركتكم، واحتياجات مشاريعكم.",
+"service_skilled_worker_desc6": "• التعاون مع العمال الفلبينيين المهرة يمنحكم العديد من المزايا مثل الإنتاجية العالية، ومهارات التواصل الممتازة، وأخلاقيات العمل القوية.",
+"service_skilled_worker_desc7": "• نحن ملتزمون بتوفير كوادر موثوقة تساهم بفاعلية في أعمالكم. لا تترددوا في التواصل معنا لمزيد من التفاصيل أو لمناقشة احتياجاتكم الخاصة.",
+"service.job_order.desc": "شكرًا لاختياركم خدماتنا لدعم احتياجاتكم من العمالة. يسعدنا مساعدتكم في الموافقة ومعالجة أوامر توظيف العمالة المهرة من الفلبين. يضمن فريقنا المتخصص مراجعة دقيقة لكل أمر توظيف والتأكد من مطابقته للوائح العمل في الفلبين وفي بلد الوجهة. نعمل بالتنسيق مع الوكالات المعتمدة وهيئة POEA لتوثيق المستندات، والتحقق من الوظائف، والحصول على الموافقات في الوقت المناسب. أولويتنا هي تبسيط العملية مع ضمان الشفافية والامتثال القانوني والاحترافية.",
+"service.nurse_license.desc":"شكرًا لاختياركم خدماتنا لتلبية احتياجاتكم من الموظفين. يسعدنا مساعدتكم في توظيف ممرضين فلبينيين مؤهلين يحملون تراخيص سارية في السعودية. تشمل عمليتنا فحصًا دقيقًا والتحقق من أن الممرضين يحملون المؤهلات والتراخيص والخبرة السريرية اللازمة وفقًا لمتطلباتكم. نحن نتواصل مع الجهات المختصة في السعودية للتحقق من التراخيص وضمان الامتثال للوائح المحلية. بعد التحقق، نقوم بتسهيل عمليات التوظيف والتوثيق والانضمام، ونوفر لكم مهنيين صحيين مؤهلين وجاهزين للانضمام إلى مؤسستكم. نحن ملتزمون بتقديم مرشحين ذوي كفاءة عالية والحفاظ على عملية توظيف شفافة وفعالة. إذا كانت لديكم معايير خاصة أو استفسارات إضافية، فلا تترددوا في التواصل معنا. شكرًا لثقتكم بنا.",
+"service.licensed_agency.desc" : "نحن ملتزمون بتقديم دعم مخصص لمساعدتكم في تحقيق أهدافكم التجارية. سيعمل فريقنا بشكل وثيق معكم لفهم احتياجاتكم الخاصة وإرشادكم خلال عملية إبرام اتفاقية تجارية مع وكالات فلبينية مرخصة وذات سمعة جيدة. هدفنا هو ضمان شراكة سلسة وشفافة من خلال الاستفادة من خبرتنا وشبكتنا المهنية في الفلبين. نحن نتولى جميع الاتصالات والوثائق والمفاوضات اللازمة لضمان أفضل الشروط لمصلحتكم. تأكدوا أننا نضع الاحتراف والامتثال ونجاحكم في مقدمة أولوياتنا في كل خطوة من هذا المسار.",
+"service.reentry.desc":"يسعدنا مساعدتكم في طلب عقد إعادة الدخول الذي يسهل عودتكم من الفلبين إلى السعودية دون الحاجة إلى تأشيرة. يعمل فريقنا بجد لإعداد ومعالجة الوثائق اللازمة لضمان عملية دخول سلسة وخالية من التعقيدات. تم تصميم هذا العقد لتسهيل ترتيبات السفر الخاصة بكم وتوفير مسار قانوني وفعّال للعودة إلى السعودية. سنبقيكم على اطلاع طوال العملية ونضمن استيفاء جميع المتطلبات وفقًا للأنظمة المعمول بها. شكرًا لثقتكم بنا. لا تترددوا في التواصل معنا إذا كانت لديكم أي أسئلة أو تحتاجون إلى مساعدة إضافية.",
+"service.etravel.desc":"شكرًا لاختياركم خدماتنا لتلبية احتياجاتكم من وثائق السفر الإلكترونية. نحن ملتزمون بتقديم دعم فعّال وموثوق في معالجة وثائق السفر الإلكترونية للعاملين الفلبينيين. سيقوم فريقنا بمراجعة طلبكم بعناية وجمع جميع المعلومات اللازمة لضمان الامتثال للأنظمة المعمول بها. سنسهل إعداد وتقديم الوثائق لتوفير الوقت والجهد عليكم. نضمن الدقة والأمان في التعامل مع بياناتكم، وسنوافيكم بكل جديد خلال كل مرحلة من مراحل العملية. إذا كانت لديكم أي استفسارات أو تحتاجون إلى مساعدة إضافية، لا تترددوا في التواصل معنا. شكرًا لثقتكم. نتطلع إلى خدمتك.",
+"nav_kenya": "كينيا",
+
+    "skilled_worker.intro": "يسعدنا مساعدتكم في توفير عمال فلبينيين ذوي كفاءة عالية لتلبية احتياجاتكم من الموارد البشرية. يشمل عملنا فهمًا دقيقًا لأوامر العمل الخاصة بكم ومطابقتها مع مهنيين مؤهلين من الفلبين يتميزون بأخلاقيات عمل قوية، وكفاءة فنية، وقدرة عالية على التكيّف.",
+    "skilled_worker.service_title": "تشمل خدماتنا:",
+    "skilled_worker.service_1": "• فحص شامل للمرشحين: نقوم بتقييمات دقيقة للتأكد من امتلاك المرشحين المهارات والخبرة والشهادات المطلوبة في مجالكم.",
+    "skilled_worker.service_2": "• الالتزام والتوثيق: نتولى جميع المستندات الضرورية مثل تصاريح العمل، والتأشيرات، وعقود العمل بما يتوافق مع اللوائح القانونية.",
+    "skilled_worker.service_3": "• التحقق من المهارات: نؤكد كفاءة المرشحين ومؤهلاتهم لضمان الجودة والمصداقية.",
+    "skilled_worker.service_4": "• مطابقة الوظائف بشكل مخصص: نلائم بحثنا مع متطلباتكم الوظيفية المحددة، وثقافة شركتكم، واحتياجات مشاريعكم.",
+    "skilled_worker.advantages": " التعاون مع العمال الفلبينيين المهرة يمنحكم العديد من المزايا مثل الإنتاجية العالية، ومهارات التواصل الممتازة، وأخلاقيات العمل القوية.",
+    "skilled_worker.conclusion": " نحن ملتزمون بتوفير كوادر موثوقة تساهم بفاعلية في أعمالكم. لا تترددوا في التواصل معنا لمزيد من التفاصيل أو لمناقشة احتياجاتكم الخاصة.",
+     
+    
+    "ph_slide1_title":"ممرضات فلبينيات ماهرات",
+    "ph_slide1_desc":"محترفون معتمدون وذوو خبرة مستعدون للعمل دولياً.",
+    "ph_slide2_title":"خبراء العناية الصحية",
+    "ph_slide2_desc":"معالجون بالتدليك وموظفو منتجعات صحية بخبرة دولية.",
+    "ph_slide3_title":"وكالات مرخصة",
+    "ph_slide3_desc":"شراكة سلسة وشفافة",
+
   }
+  
 };
