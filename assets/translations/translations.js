@@ -337,6 +337,7 @@ const translations = {
     "ph_slide2_desc":"Massage therapists and spa staff with international exposure.",
     "ph_slide3_title":"Licensed Agencies",
     "ph_slide3_desc":"Smooth & transparent partnership",
+    "nav_philippines":"Philippines",
  
 
 
@@ -691,6 +692,7 @@ const translations = {
     "ph_slide2_desc":"Thérapeutes de massage et personnel de spa ayant une expérience internationale.",
     "ph_slide3_title":"Agences agréées",
     "ph_slide3_desc":"Partenariat fluide et transparent",
+     "nav_philippines":"Philippines",
  
 
 
@@ -1042,8 +1044,8 @@ const translations = {
     "skilled_worker.service_2": "• الالتزام والتوثيق: نتولى جميع المستندات الضرورية مثل تصاريح العمل، والتأشيرات، وعقود العمل بما يتوافق مع اللوائح القانونية.",
     "skilled_worker.service_3": "• التحقق من المهارات: نؤكد كفاءة المرشحين ومؤهلاتهم لضمان الجودة والمصداقية.",
     "skilled_worker.service_4": "• مطابقة الوظائف بشكل مخصص: نلائم بحثنا مع متطلباتكم الوظيفية المحددة، وثقافة شركتكم، واحتياجات مشاريعكم.",
-    "skilled_worker.advantages": " التعاون مع العمال الفلبينيين المهرة يمنحكم العديد من المزايا مثل الإنتاجية العالية، ومهارات التواصل الممتازة، وأخلاقيات العمل القوية.",
-    "skilled_worker.conclusion": " نحن ملتزمون بتوفير كوادر موثوقة تساهم بفاعلية في أعمالكم. لا تترددوا في التواصل معنا لمزيد من التفاصيل أو لمناقشة احتياجاتكم الخاصة.",
+    "skilled_worker.advantages": "• التعاون مع العمال الفلبينيين المهرة يمنحكم العديد من المزايا مثل الإنتاجية العالية، ومهارات التواصل الممتازة، وأخلاقيات العمل القوية.",
+    "skilled_worker.conclusion": "• نحن ملتزمون بتوفير كوادر موثوقة تساهم بفاعلية في أعمالكم. لا تترددوا في التواصل معنا لمزيد من التفاصيل أو لمناقشة احتياجاتكم الخاصة.",
      
     
     "ph_slide1_title":"ممرضات فلبينيات ماهرات",
@@ -1052,6 +1054,7 @@ const translations = {
     "ph_slide2_desc":"معالجون بالتدليك وموظفو منتجعات صحية بخبرة دولية.",
     "ph_slide3_title":"وكالات مرخصة",
     "ph_slide3_desc":"شراكة سلسة وشفافة",
+    "nav_philippines":"الفلبين",
 
   }
   

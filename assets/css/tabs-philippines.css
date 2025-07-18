@@ -83,6 +83,7 @@
   padding-right: 18px;
 }
 
+
 /* Bullet Dot */
 .philippines-content ul li::before {
   content: "•";
@@ -256,28 +257,22 @@ html[dir="rtl"] .services-section {
 }
 
 /* ✅ RTL Overrides */
-html[dir="rtl"] .tab-pane,
-html[dir="rtl"] .tab-pane p,
-html[dir="rtl"] .tab-pane ul,
-html[dir="rtl"] .tab-pane li {
+[dir="rtl"] .tab-pane,
+[dir="rtl"] .tab-pane p,
+[dir="rtl"] .tab-pane ul,
+[dir="rtl"] .tab-pane li {
    text-align: right !important;
   direction: rtl !important;
 }
 
-html[dir="rtl"] .tab-pane ul {
+[dir="rtl"] .tab-pane ul {
   padding-inline-start: 0;
   padding-inline-end: 20px;
 }
 
-html[dir="rtl"] p {
+[dir="rtl"] p {
   text-align: right !important;
 }
-
-
-
-
-
-
 
 
 
@@ -379,4 +374,7 @@ html[dir="rtl"] .service-list-filipino {
   .tab-pane ul li {
     font-size: 0.95rem;
   }
+}
+[dir="rtl"] #tab1 {
+  text-align: right;
 }
