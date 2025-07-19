@@ -10,21 +10,7 @@
   z-index: 999;
 }
 
-#filipinonavbar .navbar-brand h2 {
-  color: #ffffff !important;
-}
 
-#filipinonavbar .navbar-nav a.nav-link {
-  color: #ffffff !important;
-}
-
-#filipinonavbar .navbar-nav .nav-link:hover,
-#filipinonavbar .navbar-nav .active > .nav-link,
-#filipinonavbar .navbar-nav .nav-link.current,
-#filipinonavbar .navbar-nav .nav-link.show,
-#filipinonavbar .navbar-nav .show > .nav-link {
-  color: #a4c639 !important; /* Optional accent color */
-}
 
  [dir="rtl"] .slider-text {
       text-align: right;
