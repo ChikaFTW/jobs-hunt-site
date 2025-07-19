@@ -257,13 +257,13 @@ html[dir="rtl"] .services-section {
 }
 
 /* ✅ RTL Overrides */
-[dir="rtl"] .tab-pane,
 [dir="rtl"] .tab-pane p,
 [dir="rtl"] .tab-pane ul,
 [dir="rtl"] .tab-pane li {
    text-align: right !important;
   direction: rtl !important;
 }
+
 
 [dir="rtl"] .tab-pane ul {
   padding-inline-start: 0;
@@ -333,7 +333,7 @@ html[dir="rtl"] .services-section {
   }
 
   .slider-content p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -343,12 +343,14 @@ html[dir="rtl"] .services-section {
   direction: inherit;       /* Follows document or parent direction */
 }
 
-/* Optional: Adjust list style depending on direction */
-html[dir="rtl"] .service-list-filipino {
-  list-style-position: inside;
-  padding-inline-start: 0;
-  padding-inline-end: 20px;
-}
+
+ [dir="rtl"] .slider-content h2 {
+    text-align: right;
+  }
+
+   [dir="rtl"] .slider-content p {
+    font-size: 1.1rem;
+  }
 
 
 
