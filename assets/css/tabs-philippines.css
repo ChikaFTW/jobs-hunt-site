@@ -1,114 +1,29 @@
-#filipinonavbar{
-  background: rgba(255, 255, 255, 0.2); /* Light transparent white */
-  backdrop-filter: blur(20px); /* Glass blur effect */
-  -webkit-backdrop-filter: blur(20px); /* Safari support */
-  color: #000; /* Text color */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional subtle bottom border */
+#filipinonavbar {
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
 }
 
-/* philipines css */
-.philippines-tabs-container {
-  background-color: #f4f8ff;
-  border-radius: 16px;
-  padding: 30px 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  margin-bottom: 30px;
-  direction: ltr;
+#filipinonavbar .navbar-brand h2 {
+  color: #ffffff !important;
 }
 
-[dir="rtl"] .philippines-tabs-container {
-  direction: rtl;
+#filipinonavbar .navbar-nav a.nav-link {
+  color: #ffffff !important;
 }
 
-
-/* Content Area */
-.philippines-content {
-  position: relative;
-  min-height: 300px;
-}
-
-.philippines-content article {
-  display: none;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.5s ease;
-}
-
-.philippines-content article.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Headings */
-.philippines-content h4 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-/* Paragraphs */
-.philippines-content p {
-  font-size: 15px;
-  color: #22649e;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-/* Lists */
-.philippines-content ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-[dir="rtl"] .philippines-content ul {
-  padding-right: 20px;
-  padding-left: 0;
-}
-
-.philippines-content ul li {
-  position: relative;
-  margin-bottom: 10px;
-  padding-left: 18px;
-}
-
-[dir="rtl"] .philippines-content ul li {
-  padding-left: 0;
-  padding-right: 18px;
-}
-
-
-/* Bullet Dot */
-.philippines-content ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #007bff;
-  font-weight: bold;
-}
-
-[dir="rtl"] .philippines-content ul li::before {
-  right: 0;
-  left: auto;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .philippines-tabs {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .philippines-tabs li a {
-    width: 90%;
-    text-align: center;
-  }
+#filipinonavbar .navbar-nav .nav-link:hover,
+#filipinonavbar .navbar-nav .active > .nav-link,
+#filipinonavbar .navbar-nav .nav-link.current,
+#filipinonavbar .navbar-nav .nav-link.show,
+#filipinonavbar .navbar-nav .show > .nav-link {
+  color: #a4c639 !important; /* Optional accent color */
 }
 
  [dir="rtl"] .slider-text {
@@ -377,6 +292,4 @@ html[dir="rtl"] .services-section {
     font-size: 0.95rem;
   }
 }
-[dir="rtl"] #tab1 {
-  text-align: right;
-}
+
