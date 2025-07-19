@@ -257,7 +257,6 @@ html[dir="rtl"] .services-section {
 }
 
 /* ✅ RTL Overrides */
-[dir="rtl"] .tab-pane,
 [dir="rtl"] .tab-pane p,
 [dir="rtl"] .tab-pane ul,
 [dir="rtl"] .tab-pane li {
@@ -375,6 +374,4 @@ html[dir="rtl"] .service-list-filipino {
     font-size: 0.95rem;
   }
 }
-[dir="rtl"] #tab1 {
-  text-align: right;
-}
+
