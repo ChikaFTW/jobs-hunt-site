@@ -89,7 +89,7 @@ const translations = {
     "contract_terms_button": "Read More",
     
     // Stats Section
-    "work_hours_body": "Saudi Clients",
+    "work_hours_body": "Saudi Companies",
     "great_reviews_body": "Great Reviews",
     "project_done_done": "Projects Done",
     "awards_won_body": "Different Countries",
@@ -440,7 +440,7 @@ const translations = {
     "contract_terms_button": "Lire la suite",
     
     // Stats Section
-    "work_hours_body": "Clients saoudiens",
+    "work_hours_body": "Entreprises saoudiennes",
     "great_reviews_body": "Excellent avis",
     "project_done_done": "Projets réalisés",
     "awards_won_body": "Différents pays",
@@ -795,7 +795,7 @@ const translations = {
     "contract_terms_button": "اقرأ المزيد",
     
     // Stats Section
-    "work_hours_body": "العملاء السعوديون",
+    "work_hours_body": "الشركات السعودية",
     "great_reviews_body": "تقييمات رائعة",
     "project_done_done": "المشاريع المكتملة",
     "awards_won_body": "دول مختلفة",
